@@ -62,7 +62,7 @@ const Index = () => {
         </header>
 
         <Tabs defaultValue="landmarks" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-12 h-auto">
+          <TabsList className="grid w-full grid-cols-4 mb-12 h-auto">
             <TabsTrigger value="landmarks" className="text-base py-3">
               <Icon name="MapPin" size={20} className="mr-2" />
               Достопримечательности
@@ -74,6 +74,10 @@ const Index = () => {
             <TabsTrigger value="music" className="text-base py-3">
               <Icon name="Music" size={20} className="mr-2" />
               Музыка
+            </TabsTrigger>
+            <TabsTrigger value="tales" className="text-base py-3">
+              <Icon name="BookOpen" size={20} className="mr-2" />
+              Сказки
             </TabsTrigger>
           </TabsList>
 
@@ -275,6 +279,140 @@ const Index = () => {
                       <p>Вдохновение дал нам он этим языком.</p>
                       <p>Человек без родного языка – дом без хозяина,</p>
                       <p>Нет в мире народа без родного языка.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="tales" className="space-y-8 animate-fade-in">
+            <Card className="overflow-hidden max-w-5xl mx-auto">
+              <CardContent className="p-8 md:p-12">
+                <div className="text-center mb-8">
+                  <h2 className="text-4xl font-bold mb-3 text-primary">
+                    Өч кыз
+                  </h2>
+                  <p className="text-xl text-muted-foreground">Три дочери</p>
+                  <p className="text-sm text-muted-foreground mt-2 italic">Татарская народная сказка</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-primary/5 rounded-lg p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Icon name="Languages" size={20} className="text-primary" />
+                      <h3 className="text-lg font-semibold text-primary">
+                        Татарча
+                      </h3>
+                    </div>
+                    <div className="text-foreground leading-relaxed space-y-4">
+                      <p>
+                        Борынгы заманда бер карчык яшәгән. Аның өч кызы булган.
+                        Картайгач, карчык авырый башлаган.
+                      </p>
+                      <p>
+                        Бер көнне ул кызларын чакырып әйткән: "Кызларым, мин бик
+                        авырыйм. Сезнең кемнең күңеле миңа якын икән, белергә
+                        телим."
+                      </p>
+                      <p>
+                        Олы кыз әйткән: "Әнием, син минем өчен кояш кебек якын
+                        һәм кадерле."
+                      </p>
+                      <p>
+                        Урта кыз әйткән: "Әнием, син минем өчен ай кебек матур
+                        һәм якты."
+                      </p>
+                      <p>
+                        Кече кыз уйланып калды һәм әйткән: "Әнием, син минем
+                        өчен тоз кебек кирәксез."
+                      </p>
+                      <p>
+                        Карчык рәнҗеде һәм кече кызын өйдән куып җибәрде.
+                      </p>
+                      <p>
+                        Еллар узды. Карчык өйдә утырып, кызларын көтә. Олы кыз
+                        белән урта кыз бер тапкыр да килмәделәр. Ләкин кече кыз
+                        көн саен килеп, әнисенә ярдәм итә, ашын пешерә.
+                      </p>
+                      <p>
+                        Бер көнне карчык сорады: "Кызым, ни өчен ашыңа тоз
+                        куймыйсың?"
+                      </p>
+                      <p>
+                        Кече кыз елмайды: "Әнием, син тозсыз аш татып кара.
+                        Тоз тәмле булмаса да, аннан башка яши алмыйбыз. Шулай ук
+                        әни дә – күренмәс, ләкин иң кирәкле."
+                      </p>
+                      <p>
+                        Карчык аңлады: кече кызы аны иң ныклы яратканын.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-secondary/5 rounded-lg p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Icon name="BookOpen" size={20} className="text-secondary" />
+                      <h3 className="text-lg font-semibold text-secondary">
+                        По-русски
+                      </h3>
+                    </div>
+                    <div className="text-foreground leading-relaxed space-y-4">
+                      <p>
+                        В давние времена жила одна старушка. У неё было три
+                        дочери. Когда она состарилась, стала болеть.
+                      </p>
+                      <p>
+                        Однажды она позвала дочерей и сказала: "Дочери мои, я
+                        очень больна. Хочу узнать, чьё сердце мне ближе всего."
+                      </p>
+                      <p>
+                        Старшая дочь сказала: "Мама, ты для меня близка и дорога,
+                        как солнце."
+                      </p>
+                      <p>
+                        Средняя дочь сказала: "Мама, ты для меня прекрасна и
+                        светла, как луна."
+                      </p>
+                      <p>
+                        Младшая дочь задумалась и сказала: "Мама, ты для меня
+                        нужна, как соль."
+                      </p>
+                      <p>
+                        Старушка обиделась и прогнала младшую дочь из дома.
+                      </p>
+                      <p>
+                        Прошли годы. Старушка сидит дома и ждёт дочерей. Старшая
+                        и средняя дочери ни разу не пришли. Но младшая дочь
+                        приходила каждый день, помогала матери, готовила еду.
+                      </p>
+                      <p>
+                        Однажды старушка спросила: "Дочка, почему ты не
+                        кладёшь соль в еду?"
+                      </p>
+                      <p>
+                        Младшая дочь улыбнулась: "Мама, попробуй еду без соли.
+                        Хоть соль и не вкусная, без неё жить нельзя. Так и мать –
+                        незаметна, но самая необходимая."
+                      </p>
+                      <p>
+                        Старушка поняла: младшая дочь любила её сильнее всех.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg">
+                  <div className="flex items-start gap-3">
+                    <Icon name="Lightbulb" size={24} className="text-secondary mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2 text-primary">Мораль сказки</h4>
+                      <p className="text-foreground leading-relaxed">
+                        Истинная любовь и забота проявляются не в красивых словах, а в
+                        повседневных делах. Самое важное в жизни часто кажется
+                        незаметным, но без этого невозможно обойтись – как без соли в
+                        пище.
+                      </p>
                     </div>
                   </div>
                 </div>
