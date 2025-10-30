@@ -53,12 +53,31 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         <header className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
-            Татарстан
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Культурное наследие и традиции
-          </p>
+          <div className="flex flex-col items-center gap-6">
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
+                Татарстан
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                Культурное наследие и традиции
+              </p>
+            </div>
+            <Card className="inline-block">
+              <CardContent className="p-4">
+                <div className="text-center">
+                  <img
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(window.location.href)}`}
+                    alt="QR-код сайта"
+                    className="w-48 h-48 mx-auto mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
+                    <Icon name="QrCode" size={16} />
+                    Поделитесь сайтом
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </header>
 
         <Tabs defaultValue="landmarks" className="w-full">
