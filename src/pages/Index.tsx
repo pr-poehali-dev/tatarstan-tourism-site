@@ -205,7 +205,7 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="aspect-square">
                     <img
-                      src="https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/132b0fac-807d-4ca7-a3cd-317f566e1557.jpg"
+                      src="https://cdn.poehali.dev/files/7cf50650-ec1d-4bc6-8310-8f32ec15a51c.png"
                       alt="Татарский орнамент"
                       className="w-full h-full object-cover"
                     />
