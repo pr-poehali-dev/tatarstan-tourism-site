@@ -24,15 +24,6 @@ const landmarks = [
     coordinates: '55.7984° N, 49.1050° E',
     image: 'https://cdn.poehali.dev/files/97d3274e-31a7-4b76-a8e6-65bc2c4c54a8.png',
   },
-  {
-    id: 3,
-    name: 'Центр семьи "Казан"',
-    nameEn: 'Kazan Family Center',
-    description: 'Современное здание в форме традиционного казана',
-    location: 'набережная Казанки, Казань',
-    coordinates: '55.7897° N, 49.1231° E',
-    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/6c02fce9-85f9-4504-879d-0bfd660762cc.jpg',
-  },
 ];
 
 const Index = () => {
