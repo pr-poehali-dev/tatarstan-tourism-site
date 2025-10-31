@@ -264,7 +264,7 @@ const Index = () => {
                   </div>
                   <div className="aspect-square order-1 md:order-2">
                     <img
-                      src="https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/52d72e74-55c7-476b-8cdd-965185a2bef9.jpg"
+                      src="https://cdn.poehali.dev/files/70afc4a9-32dc-4eee-a824-6d4653f83c44.png"
                       alt="Национальная одежда"
                       className="w-full h-full object-cover"
                     />
