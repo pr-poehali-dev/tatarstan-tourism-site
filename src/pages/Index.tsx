@@ -13,7 +13,7 @@ const landmarks = [
     description: 'Падающая башня Казанского Кремля, символ города',
     location: 'Казанский Кремль, Казань',
     coordinates: '55.7987° N, 49.1053° E',
-    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/4b983f7f-b23c-4bd3-a79b-d1956406d0df.jpg',
+    image: 'https://cdn.poehali.dev/files/8ef37337-e3ed-4872-a62f-08e53e92f4bd.png',
   },
   {
     id: 2,
