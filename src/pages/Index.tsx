@@ -1,8 +1,9 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import QRCode from 'qrcode';
 
 const landmarks = [
   {
@@ -36,7 +37,27 @@ const landmarks = [
 
 const Index = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [qrCodeUrl, setQrCodeUrl] = useState('');
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const generateQR = async () => {
+      try {
+        const url = await QRCode.toDataURL(window.location.href, {
+          width: 200,
+          margin: 2,
+          color: {
+            dark: '#000000',
+            light: '#FFFFFF'
+          }
+        });
+        setQrCodeUrl(url);
+      } catch (err) {
+        console.error('Ошибка генерации QR-кода', err);
+      }
+    };
+    generateQR();
+  }, []);
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -50,9 +71,9 @@ const Index = () => {
   };
 
   const downloadQRCode = () => {
-    const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(window.location.href)}`;
+    if (!qrCodeUrl) return;
     const link = document.createElement('a');
-    link.href = qrUrl;
+    link.href = qrCodeUrl;
     link.download = 'tatarstan-qr.png';
     document.body.appendChild(link);
     link.click();
@@ -76,11 +97,17 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="text-center">
                   <div className="bg-white p-4 rounded-lg mb-4 inline-block">
-                    <img
-                      src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(window.location.href)}`}
-                      alt="QR-код сайта"
-                      className="w-48 h-48"
-                    />
+                    {qrCodeUrl ? (
+                      <img
+                        src={qrCodeUrl}
+                        alt="QR-код сайта"
+                        className="w-48 h-48"
+                      />
+                    ) : (
+                      <div className="w-48 h-48 flex items-center justify-center">
+                        <Icon name="Loader2" size={32} className="animate-spin text-muted-foreground" />
+                      </div>
+                    )}
                   </div>
                   <p className="text-sm text-muted-foreground mb-3 flex items-center justify-center gap-2">
                     <Icon name="QrCode" size={16} />
