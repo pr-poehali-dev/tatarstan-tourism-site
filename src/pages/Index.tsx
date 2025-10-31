@@ -24,6 +24,15 @@ const landmarks = [
     coordinates: '55.7984° N, 49.1050° E',
     image: 'https://cdn.poehali.dev/files/97d3274e-31a7-4b76-a8e6-65bc2c4c54a8.png',
   },
+  {
+    id: 3,
+    name: 'Казанский Кремль',
+    nameEn: 'Kazan Kremlin',
+    description: 'Древняя крепость и историко-архитектурный комплекс',
+    location: 'Кремлёвская улица, Казань',
+    coordinates: '55.7984° N, 49.1061° E',
+    image: 'https://cdn.poehali.dev/files/40c876e2-173b-4693-a723-5370e509aeab.png',
+  },
 ];
 
 const Index = () => {
