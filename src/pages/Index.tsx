@@ -49,6 +49,16 @@ const Index = () => {
     }
   };
 
+  const downloadQRCode = () => {
+    const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(window.location.href)}`;
+    const link = document.createElement('a');
+    link.href = qrUrl;
+    link.download = 'tatarstan-qr.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
@@ -62,18 +72,24 @@ const Index = () => {
                 Культурное наследие и традиции
               </p>
             </div>
-            <Card className="inline-block">
-              <CardContent className="p-4">
+            <Card className="inline-block shadow-lg">
+              <CardContent className="p-6">
                 <div className="text-center">
-                  <img
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(window.location.href)}`}
-                    alt="QR-код сайта"
-                    className="w-48 h-48 mx-auto mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
+                  <div className="bg-white p-4 rounded-lg mb-4 inline-block">
+                    <img
+                      src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(window.location.href)}`}
+                      alt="QR-код сайта"
+                      className="w-48 h-48"
+                    />
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3 flex items-center justify-center gap-2">
                     <Icon name="QrCode" size={16} />
                     Поделитесь сайтом
                   </p>
+                  <Button onClick={downloadQRCode} className="w-full">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Скачать QR-код
+                  </Button>
                 </div>
               </CardContent>
             </Card>
