@@ -13,7 +13,7 @@ const landmarks = [
     description: 'Падающая башня Казанского Кремля, символ города',
     location: 'Казанский Кремль, Казань',
     coordinates: '55.7987° N, 49.1053° E',
-    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/8771668d-7b40-40ea-83c9-4471a182b344.jpg',
+    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/4b983f7f-b23c-4bd3-a79b-d1956406d0df.jpg',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const landmarks = [
     description: 'Главная джума-мечеть Татарстана и Казани',
     location: 'Казанский Кремль, Казань',
     coordinates: '55.7984° N, 49.1050° E',
-    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/168204fb-647c-495c-afdb-0a050ca031d3.jpg',
+    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/cd85acc5-c368-492a-9584-429e9a7c641d.jpg',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const landmarks = [
     description: 'Современное здание в форме традиционного казана',
     location: 'набережная Казанки, Казань',
     coordinates: '55.7897° N, 49.1231° E',
-    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/ffb5a13d-7df0-4bc4-b66c-212c8333dab3.jpg',
+    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/6c02fce9-85f9-4504-879d-0bfd660762cc.jpg',
   },
 ];
 
