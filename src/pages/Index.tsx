@@ -22,7 +22,7 @@ const landmarks = [
     description: 'Главная джума-мечеть Татарстана и Казани',
     location: 'Казанский Кремль, Казань',
     coordinates: '55.7984° N, 49.1050° E',
-    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/182eac51-79c3-41d3-95c0-6d598a76e698.jpg',
+    image: 'https://cdn.poehali.dev/projects/a64c5d51-3df5-4e80-99e5-1b96ac198856/files/168204fb-647c-495c-afdb-0a050ca031d3.jpg',
   },
   {
     id: 3,
